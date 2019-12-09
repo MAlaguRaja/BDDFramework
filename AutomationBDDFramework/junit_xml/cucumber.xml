@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="61.859943">
+<testcase classname="Cart and Checkout to validate product details" name="Verify Products Add to Cart test scenario" time="61.859943">
+<system-out><![CDATA[Given User is on home screen................................................passed
+Then Verify home page is displayed on the screen............................passed
+When User tap on "Best sellers" option in home screen.......................passed
+And User tap on See more Best Sellers in Camera & Photo in best sellers page.passed
+And User select fifth product in product list page..........................passed
+And User select "8" product quantity in product details page................passed
+When User tap on "Add to cart" to add the product in cart...................passed
+Then Verify product name and total amount is displayed correctly on cart screen.passed
+]]></system-out>
+</testcase>
+</testsuite>

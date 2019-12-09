@@ -1,0 +1,150 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author:rajamurugeshk@gmail.com"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify Products Add to Cart test scenario",
+        "description": "",
+        "id": "cart-and-checkout-to-validate-product-details;verify-products-add-to-cart-test-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18477816200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on home screen",
+            "match": {
+              "location": "LaunchStepDefinition.launch_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 536469800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify home page is displayed on the screen",
+            "match": {
+              "location": "LaunchStepDefinition.home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34735548900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User tap on \"Best sellers\" option in home screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Best sellers",
+                  "offset": 13
+                }
+              ],
+              "location": "LaunchStepDefinition.select_catagory(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18346232700,
+              "error_message": "java.lang.NullPointerException\r\n\tat CommonLibrary.CommonLibrary.morebestseller(CommonLibrary.java:77)\r\n\tat stepDefinition.LaunchStepDefinition.more_best_seller_products(LaunchStepDefinition.java:45)\r\n\tat ✽.And User tap on See more Best Sellers in Camera \u0026 Photo in best sellers page(F:/eclipsesetup/AutomationBDDFramework/src/main/java/Features/cartAndCheckout.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User tap on See more Best Sellers in Camera \u0026 Photo in best sellers page",
+            "match": {
+              "location": "LaunchStepDefinition.more_best_seller_products()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User select fifth product in product list page",
+            "match": {
+              "location": "LaunchStepDefinition.product_list_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User select \"8\" product quantity in product details page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 13
+                }
+              ],
+              "location": "LaunchStepDefinition.select_product_quantity(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User tap on \"Add to cart\" to add the product in cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Add to cart",
+                  "offset": 13
+                }
+              ],
+              "location": "LaunchStepDefinition.add_to_cart(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Verify product name and total amount is displayed correctly on cart screen",
+            "match": {
+              "location": "LaunchStepDefinition.cart_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User close the browser",
+            "match": {
+              "location": "LaunchStepDefinition.close_browser()"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Cart and Checkout to validate product details",
+    "description": "",
+    "id": "cart-and-checkout-to-validate-product-details",
+    "keyword": "Feature",
+    "uri": "F:/eclipsesetup/AutomationBDDFramework/src/main/java/Features/cartAndCheckout.feature"
+  }
+]
