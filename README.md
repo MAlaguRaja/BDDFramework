@@ -32,3 +32,6 @@ How to Execute:
      a) cucumber-extent
      b) cucumber-json
      c) cucumber-pretty
+ Right click and copy the location of .html(Report.html) in 'cucumber-extent' folder and paste in browser(ex:chrome)
+ and we can see the detail cucumber report with execution status.
+ 
