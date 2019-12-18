@@ -30,11 +30,13 @@ public class CommonLibrary extends CommonOR {
 		System.out.println(path);
 		System.setProperty("webdriver.chrome.driver", path + "\\resource\\chromedriver.exe");
 
+		
 		// ChromeOptions options = new ChromeOptions();
 		// options.addArguments("--start-maximized");
 		driver = new ChromeDriver();
 
 		// Open Amazon
+		
 		
 		driver.get("http://www.amazon.com");
 		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
