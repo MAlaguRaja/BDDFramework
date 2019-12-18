@@ -178,7 +178,7 @@ public class CommonLibrary extends CommonOR {
 
 			Thread.sleep(5000);
 
-			CommonLibrary.driver.close();
+			CommonLibrary.driver.quit();
 		} catch (Exception exe) {
 			exe.printStackTrace();
 
