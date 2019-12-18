@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("F:/eclipsesetup/AutomationBDDFramework/src/main/java/Features/cartAndCheckout.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./src/main/java/Features/cartAndCheckout.feature");
 formatter.feature({
   "comments": [
     {
@@ -69,14 +69,14 @@ formatter.match({
   "location": "LaunchStepDefinition.launch_application()"
 });
 formatter.result({
-  "duration": 18477816200,
+  "duration": 51465529528,
   "status": "passed"
 });
 formatter.match({
   "location": "LaunchStepDefinition.home_page()"
 });
 formatter.result({
-  "duration": 536469800,
+  "duration": 169964369,
   "status": "passed"
 });
 formatter.match({
@@ -89,22 +89,22 @@ formatter.match({
   "location": "LaunchStepDefinition.select_catagory(String)"
 });
 formatter.result({
-  "duration": 34735548900,
+  "duration": 88676568325,
   "status": "passed"
 });
 formatter.match({
   "location": "LaunchStepDefinition.more_best_seller_products()"
 });
 formatter.result({
-  "duration": 18346232700,
-  "error_message": "java.lang.NullPointerException\r\n\tat CommonLibrary.CommonLibrary.morebestseller(CommonLibrary.java:77)\r\n\tat stepDefinition.LaunchStepDefinition.more_best_seller_products(LaunchStepDefinition.java:45)\r\n\tat ✽.And User tap on See more Best Sellers in Camera \u0026 Photo in best sellers page(F:/eclipsesetup/AutomationBDDFramework/src/main/java/Features/cartAndCheckout.feature:8)\r\n",
-  "status": "failed"
+  "duration": 3756748869,
+  "status": "passed"
 });
 formatter.match({
   "location": "LaunchStepDefinition.product_list_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2861552294,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -116,7 +116,8 @@ formatter.match({
   "location": "LaunchStepDefinition.select_product_quantity(int)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10513414294,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -128,18 +129,21 @@ formatter.match({
   "location": "LaunchStepDefinition.add_to_cart(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 55810152588,
+  "status": "passed"
 });
 formatter.match({
   "location": "LaunchStepDefinition.cart_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 142399950,
+  "status": "passed"
 });
 formatter.match({
   "location": "LaunchStepDefinition.close_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5727645409,
+  "status": "passed"
 });
 });

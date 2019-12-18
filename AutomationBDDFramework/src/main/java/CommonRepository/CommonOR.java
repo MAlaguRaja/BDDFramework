@@ -17,8 +17,8 @@ import stepDefinition.LaunchStepDefinition;
 
 public class CommonOR {
 
-
 	public static String bestseller = "//div[@id='nav-xshop']//a[2]";
+	public static String bestseller_one = "//a[contains(text(),'Best Sellers')]";
 	public static String productlist = "(//div[@id=\"zg-center-div\"]//img)";
 	public static String changeaddress = "//span[@id='glow-ingress-line1']";
 	public static String updatezipcode = "//div[@id='GLOWFeature_AddressList']//input[@id='GLUXZipUpdateInput']";
@@ -31,5 +31,12 @@ public class CommonOR {
 	public static String nothanks_btn = "//button[@id='attachSiNoCoverage-announce']";
 	public static String viewcart_btn = "//input[@aria-labelledby='attach-sidesheet-view-cart-button-announce']";
 	public static String availablequantity = "//div[contains(@class,'dropdown')]//ul[@role='listbox']//li";
+	public static String cart_btn_one = "(//a[@role='button' and contains(text(),'Cart')])[1]";
+	public static String cart_btn_two = "(//span[contains(@id,'view-cart')])[1]";
+	public static String cart_btn_three = "//*[@id ='hlb-view-cart-announce']";
+
+	public static String added_to_cart_one = "//h1[contains(text(),'Added to Cart')]";
+
+	public static String added_to_cart_two = "//div[contains(@id,'attachDisplayAddBaseAlert')]";
 
 }

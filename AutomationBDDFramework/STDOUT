@@ -1,16 +1,11 @@
 #Author:rajamurugeshk@gmail.com
 Feature: Cart and Checkout to validate product details
 
-  Scenario: Verify Products Add to Cart test scenario                               # F:/eclipsesetup/AutomationBDDFramework/src/main/java/Features/cartAndCheckout.feature:4
+  Scenario: Verify Products Add to Cart test scenario                               # ./src/main/java/Features/cartAndCheckout.feature:4
     Given User is on home screen                                                    # LaunchStepDefinition.launch_application()
     Then Verify home page is displayed on the screen                                # LaunchStepDefinition.home_page()
     When User tap on "Best sellers" option in home screen                           # LaunchStepDefinition.select_catagory(String)
     And User tap on See more Best Sellers in Camera & Photo in best sellers page    # LaunchStepDefinition.more_best_seller_products()
-      java.lang.NullPointerException
-      	at CommonLibrary.CommonLibrary.morebestseller(CommonLibrary.java:77)
-      	at stepDefinition.LaunchStepDefinition.more_best_seller_products(LaunchStepDefinition.java:45)
-      	at ✽.And User tap on See more Best Sellers in Camera & Photo in best sellers page(F:/eclipsesetup/AutomationBDDFramework/src/main/java/Features/cartAndCheckout.feature:8)
-
     And User select fifth product in product list page                              # LaunchStepDefinition.product_list_page()
     And User select "8" product quantity in product details page                    # LaunchStepDefinition.select_product_quantity(int)
     When User tap on "Add to cart" to add the product in cart                       # LaunchStepDefinition.add_to_cart(String)

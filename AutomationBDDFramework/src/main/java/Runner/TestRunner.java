@@ -11,12 +11,12 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "F:\\eclipsesetup\\AutomationBDDFramework\\src\\main\\java\\Features\\cartAndCheckout.feature", //the path of the feature files
+		features = ".\\src\\main\\java\\Features\\cartAndCheckout.feature", //the path of the feature files
 		glue={"stepDefinition"}, //the path of the step definition files
 		//plugin= {"pretty","html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"}, //to generate different types of reporting
-		plugin = {"pretty:STDOUT","html:F:\\eclipsesetup\\AutomationBDDFramework\\Reports\\cucumber-pretty",
-					    "json:F:\\eclipsesetup\\AutomationBDDFramework\\Reports\\cucumber-json\\cucumber.json",
-					    "com.cucumber.listener.ExtentCucumberFormatter:F:\\eclipsesetup\\AutomationBDDFramework\\Reports\\cucumber-extent\\report.html"
+		plugin = {"pretty:STDOUT","html:.\\Reports\\cucumber-pretty",
+					    "json:.\\Reports\\cucumber-json\\cucumber.json",
+					    "com.cucumber.listener.ExtentCucumberFormatter:.\\Reports\\cucumber-extent\\report.html"
 					   },
 
 		
@@ -30,7 +30,7 @@ public class TestRunner {
 	
 	@AfterClass
 	 public static void writeExtentReport() {
-		Reporter.loadXMLConfig(new File("F:\\eclipsesetup\\AutomationBDDFramework\\Config\\extent-config.xml"));
+		Reporter.loadXMLConfig(new File(".\\Config\\extent-config.xml"));
 	 }
 	
 

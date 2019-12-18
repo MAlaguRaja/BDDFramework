@@ -18,7 +18,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18477816200,
+              "duration": 51465529528,
               "status": "passed"
             },
             "line": 5,
@@ -30,7 +30,7 @@
           },
           {
             "result": {
-              "duration": 536469800,
+              "duration": 169964369,
               "status": "passed"
             },
             "line": 6,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 34735548900,
+              "duration": 88676568325,
               "status": "passed"
             },
             "line": 7,
@@ -60,9 +60,8 @@
           },
           {
             "result": {
-              "duration": 18346232700,
-              "error_message": "java.lang.NullPointerException\r\n\tat CommonLibrary.CommonLibrary.morebestseller(CommonLibrary.java:77)\r\n\tat stepDefinition.LaunchStepDefinition.more_best_seller_products(LaunchStepDefinition.java:45)\r\n\tat ✽.And User tap on See more Best Sellers in Camera \u0026 Photo in best sellers page(F:/eclipsesetup/AutomationBDDFramework/src/main/java/Features/cartAndCheckout.feature:8)\r\n",
-              "status": "failed"
+              "duration": 3756748869,
+              "status": "passed"
             },
             "line": 8,
             "name": "User tap on See more Best Sellers in Camera \u0026 Photo in best sellers page",
@@ -73,7 +72,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2861552294,
+              "status": "passed"
             },
             "line": 9,
             "name": "User select fifth product in product list page",
@@ -84,7 +84,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10513414294,
+              "status": "passed"
             },
             "line": 10,
             "name": "User select \"8\" product quantity in product details page",
@@ -101,7 +102,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 55810152588,
+              "status": "passed"
             },
             "line": 11,
             "name": "User tap on \"Add to cart\" to add the product in cart",
@@ -118,7 +120,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 142399950,
+              "status": "passed"
             },
             "line": 12,
             "name": "Verify product name and total amount is displayed correctly on cart screen",
@@ -129,7 +132,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5727645409,
+              "status": "passed"
             },
             "line": 13,
             "name": "User close the browser",
@@ -145,6 +149,6 @@
     "description": "",
     "id": "cart-and-checkout-to-validate-product-details",
     "keyword": "Feature",
-    "uri": "F:/eclipsesetup/AutomationBDDFramework/src/main/java/Features/cartAndCheckout.feature"
+    "uri": "./src/main/java/Features/cartAndCheckout.feature"
   }
 ]

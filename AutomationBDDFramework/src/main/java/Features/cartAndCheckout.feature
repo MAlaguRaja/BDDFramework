@@ -11,3 +11,6 @@ Feature: Cart and Checkout to validate product details
     When User tap on "Add to cart" to add the product in cart
     Then Verify product name and total amount is displayed correctly on cart screen
     When User close the browser
+    
+    
+#--------------------------------------------------------------------------------
