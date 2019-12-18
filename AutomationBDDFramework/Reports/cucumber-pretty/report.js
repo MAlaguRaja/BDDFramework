@@ -69,14 +69,14 @@ formatter.match({
   "location": "LaunchStepDefinition.launch_application()"
 });
 formatter.result({
-  "duration": 51465529528,
+  "duration": 12310422779,
   "status": "passed"
 });
 formatter.match({
   "location": "LaunchStepDefinition.home_page()"
 });
 formatter.result({
-  "duration": 169964369,
+  "duration": 39223919,
   "status": "passed"
 });
 formatter.match({
@@ -89,21 +89,21 @@ formatter.match({
   "location": "LaunchStepDefinition.select_catagory(String)"
 });
 formatter.result({
-  "duration": 88676568325,
+  "duration": 36130511534,
   "status": "passed"
 });
 formatter.match({
   "location": "LaunchStepDefinition.more_best_seller_products()"
 });
 formatter.result({
-  "duration": 3756748869,
+  "duration": 7567224080,
   "status": "passed"
 });
 formatter.match({
   "location": "LaunchStepDefinition.product_list_page()"
 });
 formatter.result({
-  "duration": 2861552294,
+  "duration": 22742063047,
   "status": "passed"
 });
 formatter.match({
@@ -116,7 +116,7 @@ formatter.match({
   "location": "LaunchStepDefinition.select_product_quantity(int)"
 });
 formatter.result({
-  "duration": 10513414294,
+  "duration": 10585272679,
   "status": "passed"
 });
 formatter.match({
@@ -129,21 +129,21 @@ formatter.match({
   "location": "LaunchStepDefinition.add_to_cart(String)"
 });
 formatter.result({
-  "duration": 55810152588,
+  "duration": 51123106374,
   "status": "passed"
 });
 formatter.match({
   "location": "LaunchStepDefinition.cart_page()"
 });
 formatter.result({
-  "duration": 142399950,
+  "duration": 316669530,
   "status": "passed"
 });
 formatter.match({
   "location": "LaunchStepDefinition.close_browser()"
 });
 formatter.result({
-  "duration": 5727645409,
+  "duration": 5729457543,
   "status": "passed"
 });
 });
