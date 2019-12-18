@@ -22,6 +22,7 @@ public class CommonLibrary extends CommonOR {
 	public static String expected_product_name;
 	public static Double expected_subtotal;
 	public static int selectquanity = 0;
+	public static String zipcode = "94545";
 
 	public static void launch_application1() {
 
@@ -58,7 +59,7 @@ public class CommonLibrary extends CommonOR {
 
 			CommonLibrary.driver.findElement(By.xpath(CommonOR.changeaddress));
 			CommonLibrary.driver.findElement(By.xpath(CommonOR.updatezipcode)).clear();
-			CommonLibrary.driver.findElement(By.xpath(CommonOR.updatezipcode)).sendKeys("94545");
+			CommonLibrary.driver.findElement(By.xpath(CommonOR.updatezipcode)).sendKeys(zipcode);
 			CommonLibrary.driver.findElement(By.xpath(CommonOR.applybtn)).click();
 
 			CommonLibrary.driver.findElement(By.xpath(CommonOR.continuebtn)).click();
