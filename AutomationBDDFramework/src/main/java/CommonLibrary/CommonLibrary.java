@@ -13,6 +13,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 
+import com.cucumber.listener.Reporter;
+
 import CommonRepository.CommonOR;
 import junit.framework.Assert;
 
@@ -98,6 +100,7 @@ public class CommonLibrary extends CommonOR {
 			product_price = CommonLibrary.driver.findElement(By.xpath(CommonOR.product_price_fifth)).getText();
 
 			System.out.println("Selected product Price is:" + product_price);
+			Reporter.addStepLog("Selected product Price is:" + product_price);
 
 			List<WebElement> products = CommonLibrary.driver.findElements(By.xpath(CommonOR.productlist));
 			int all_Product = products.size();
@@ -130,7 +133,7 @@ public class CommonLibrary extends CommonOR {
 				}
 
 			} catch (NoSuchElementException e) {
-			  System.out.println("Expected element is not visible on screen");
+			  
 			}
 
 			if (CommonLibrary.driver.findElement(By.xpath(CommonOR.added_to_cart_one)).isDisplayed()
@@ -157,17 +160,22 @@ public class CommonLibrary extends CommonOR {
 		String[] op = product_price.split("[$]");
 		double select_product_amount = Double.parseDouble(op[1]);
 		System.out.println("Selected one product Price is:" + select_product_amount);
+		Reporter.addStepLog("Selected one product Price is:" + select_product_amount);
 		expected_subtotal = select_product_amount * selectquanity;
 		System.out.println("Expected subtotal amount is:" + expected_subtotal);
-		String subtotoal_price = driver.findElement(By.xpath("//span[@id = 'sc-subtotal-amount-buybox']")).getText();
+        Reporter.addStepLog("Expected subtotal amount is:" + expected_subtotal);
+		String subtotoal_price = driver.findElement(By.xpath(CommonOR.subtotal_price_txt)).getText();
 		String[] sp = subtotoal_price.split("[$]");
 		double subtotal = Double.parseDouble(sp[1]);
 		System.out.println("Actual subtotal amount is:" + subtotal);
+		Reporter.addStepLog("Actual subtotal amount is:" + subtotal);
 		Assert.assertEquals(expected_subtotal, subtotal);
 		String actual_product_name = driver
-				.findElement(By.xpath("//span[@class='a-size-medium sc-product-title a-text-bold']")).getText();
+				.findElement(By.xpath(CommonOR.product_name_txt)).getText();
 		System.out.println("Actual Product Name is:" + actual_product_name);
+		Reporter.addStepLog("Actual Product Name is:" + actual_product_name);
 		System.out.println("Expected product name is:" + expected_product_name);
+		Reporter.addStepLog("Expected product name is:" + expected_product_name);
 		Assert.assertEquals(expected_product_name, actual_product_name);
 
 	}
@@ -179,25 +187,28 @@ public class CommonLibrary extends CommonOR {
 
 			Thread.sleep(5000);
 
-			Select se = new Select(driver.findElement(By.xpath("//select[@id='quantity']")));
+			Select se = new Select(driver.findElement(By.xpath(CommonOR.product_quantity)));
 
 			List<WebElement> l = se.getOptions();
 			int avl_qty = l.size();
 
 			System.out.println("All QUANTITY IS:" + avl_qty);
 			System.out.println("Selected Quantity:" + selectquanity);
+			Reporter.addStepLog("Selected Quantity:" + selectquanity);
 			if (avl_qty >= selectquanity) {
-				Select selectByValue = new Select(driver.findElement(By.xpath("//select[@id='quantity']")));
+				Select selectByValue = new Select(driver.findElement(By.xpath(CommonOR.product_quantity)));
 				Thread.sleep(5000);
 				selectByValue.selectByIndex(7);
 			} else {
 				System.out.println("Available quqntity is mismatched with expected quantity");
+				Reporter.addStepLog("Available quqntity is mismatched with expected quantity");
 			}
 
-			WebElement product_title = driver.findElement(By.xpath("//span[@id='productTitle']"));
+			WebElement product_title = driver.findElement(By.xpath(CommonOR.product_title_txt));
 			expected_product_name = product_title.getText();
 
 			System.out.println("Selected product name is:" + expected_product_name);
+			Reporter.addStepLog("Selected product name is:" + expected_product_name);
 		} catch (Exception exe) {
 			exe.printStackTrace();
 

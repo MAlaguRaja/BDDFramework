@@ -38,5 +38,8 @@ public class CommonOR {
 	public static String added_to_cart_one = "//h1[contains(text(),'Added to Cart')]";
 
 	public static String added_to_cart_two = "//div[contains(@id,'attachDisplayAddBaseAlert')]";
-
+	public static String subtotal_price_txt = "//span[@id = 'sc-subtotal-amount-buybox']";
+	public static String product_name_txt = "//span[contains(@class,'a-size-medium sc-product-title')]";
+	public static String product_quantity = "//select[@id='quantity']";
+	public static String product_title_txt = "//span[@id='productTitle']";
 }

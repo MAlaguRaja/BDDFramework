@@ -7,3 +7,5 @@
 [1207/212829.656:ERROR:process_info.cc(359)] UncheckedAllocate
 [1209/103533.895:ERROR:process_info.cc(359)] UncheckedAllocate
 [1209/104102.405:ERROR:process_info.cc(359)] UncheckedAllocate
+[1219/223714.193:ERROR:process_info.cc(359)] UncheckedAllocate
+[1222/204100.833:ERROR:process_info.cc(359)] UncheckedAllocate
