@@ -17,7 +17,7 @@ Once execution done successfully,execution report will be there inside 'Report' 
 
 How to Execute:
 
-1)Open 'TestEunner.java' file -> Right click on project -> select 'Run As' -> and select 'JUnit Test'
+1)Open 'TestRunner.java' file -> Right click on project -> select 'Run As' -> and select 'JUnit Test'
  Then project will execute.
 
                   (or)
